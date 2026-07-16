@@ -40,7 +40,8 @@ jobs:
 
       - name: Build
         env:
-          PORT: 3000
+         PORT: 3000
+         BASE_PATH: "/"
         run: pnpm run build
 
       - name: Setup Pages

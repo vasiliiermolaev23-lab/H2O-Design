@@ -1,0 +1,38 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "quJPVyzB00JTq_ywNqgnu"
+uri = "file://artifacts/h2o-cleaning/src/assets/hero-bg.png"
+type = "image"
+title = "luxury living room hero"
+
+[[generated]]
+id = "JUJIjAQ4TsNYwq0eA2isy"
+uri = "file://artifacts/h2o-cleaning/src/assets/cleaner-working.png"
+type = "image"
+title = "Professional cleaner wiping surface"
+
+[[generated]]
+id = "8Byl_GG5WOW49LWkD7cHX"
+uri = "file://artifacts/h2o-cleaning/src/assets/clean-bathroom.png"
+type = "image"
+title = "luxury clean bathroom"
+
+[[generated]]
+id = "hrlbB5Cwtuvg3elB6FnCo"
+uri = "file://artifacts/h2o-cleaning/src/assets/commercial-cleaning.png"
+type = "image"
+title = "Spotless modern office space"
+
+[[generated]]
+id = "c08kwxZEo4I48bthAG1c7"
+uri = "file://artifacts/h2o-cleaning/src/assets/clean-interior.png"
+type = "image"
+title = "sparkling clean kitchen"
+
+[[generated]]
+id = "j6kCuXjh0EOhqHqD6XLl8"
+uri = "file://artifacts/h2o-cleaning/src/assets/holiday-home.png"
+type = "image"
+title = "holiday home interior"

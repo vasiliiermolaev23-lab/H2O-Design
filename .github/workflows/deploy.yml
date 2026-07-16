@@ -50,7 +50,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './artifacts/h2o-cleaning/dist'
+          path: './artifacts/h2o-cleaning/public'
 
       - name: Deploy to GitHub Pages
         id: deployment

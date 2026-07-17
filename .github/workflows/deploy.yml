@@ -41,7 +41,7 @@ jobs:
       - name: Build
         env:
          PORT: 3000
-         BASE_PATH: "/H2O-Design/"
+         BASE_PATH: "/"
         run: pnpm run build
 
       - name: Setup Pages

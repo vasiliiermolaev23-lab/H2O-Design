@@ -42,6 +42,7 @@ export function Navbar() {
           <Link href="/">
             <div className="flex items-center gap-3 cursor-pointer">
               <img src={logoPath} alt="H2O Cleaning Logo" className="h-12 w-auto" />
+              <span className="font-serif text-xl tracking-wide text-foreground">H2O Cleaning</span>
             </div>
           </Link>
 

@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
-import { CheckCircle2, Shield, Sparkles, Clock } from "lucide-react";
+import { CheckCircle2, Shield, Sparkles, Clock, Award, Users, Heart } from "lucide-react";
 import heroBg from "@/assets/hero-bg.png";
 import cleanInterior from "@/assets/clean-interior.png";
 import holidayHome from "@/assets/holiday-home.png";
@@ -102,6 +102,61 @@ export default function Home() {
                 <feature.icon className="text-primary w-10 h-10 mb-6" strokeWidth={1.5} />
                 <h3 className="text-xl font-serif mb-3">{feature.title}</h3>
                 <p className="text-muted-foreground leading-relaxed text-sm">{feature.desc}</p>
+              </motion.div>
+            ))}
+          </motion.div>
+        </div>
+      </section>
+
+      {/* About Us */}
+      <section className="py-24 bg-background overflow-hidden">
+        <div className="container mx-auto px-4 md:px-6">
+          <motion.div
+            initial="hidden" whileInView="visible" viewport={{ once: true }} variants={staggerContainer}
+            className="max-w-3xl mx-auto text-center mb-16"
+          >
+            <motion.p variants={fadeIn} className="text-primary font-medium tracking-[0.2em] uppercase text-sm mb-4">
+              Who We Are
+            </motion.p>
+            <motion.h2 variants={fadeIn} className="text-3xl md:text-5xl font-serif mb-6 leading-tight">
+              A Name You Can Trust in Your Home
+            </motion.h2>
+            <motion.p variants={fadeIn} className="text-muted-foreground text-lg font-light leading-relaxed">
+              H2O Cleaning was built on a simple belief: your home deserves to be treated with the same care and respect you give it yourself. We are a dedicated team of professional cleaners serving clients across Dubai, committed to delivering a consistently exceptional standard — every single visit.
+            </motion.p>
+          </motion.div>
+
+          <motion.div
+            initial="hidden" whileInView="visible" viewport={{ once: true }} variants={staggerContainer}
+            className="grid grid-cols-1 md:grid-cols-3 gap-px border border-border"
+          >
+            {[
+              {
+                icon: Heart,
+                title: "We Care About Your Space",
+                body: "We don't just clean — we take pride in the work we do. Every home we enter is treated with discretion, care, and the highest level of professionalism. We understand that inviting someone into your home requires trust, and we take that seriously."
+              },
+              {
+                icon: Award,
+                title: "Trained & Reliable",
+                body: "Our cleaners are thoroughly vetted, trained, and held to strict quality standards. You will always receive the same high level of service, whether it is your first booking or your fiftieth. Consistency is not an accident — it is our promise."
+              },
+              {
+                icon: Users,
+                title: "Built on Reputation",
+                body: "We have grown entirely through word of mouth and the trust of our clients. Every recommendation we receive is a reflection of the work we do. We are proud of the relationships we have built, and we work hard every day to earn them."
+              }
+            ].map((item, i) => (
+              <motion.div
+                key={i}
+                variants={fadeIn}
+                className="bg-card p-10 flex flex-col gap-5"
+              >
+                <div className="w-12 h-12 rounded-full border border-primary/30 flex items-center justify-center shrink-0">
+                  <item.icon className="text-primary" size={20} strokeWidth={1.5} />
+                </div>
+                <h3 className="font-serif text-xl text-foreground">{item.title}</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed font-light">{item.body}</p>
               </motion.div>
             ))}
           </motion.div>
